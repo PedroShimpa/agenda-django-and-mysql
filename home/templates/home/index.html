@@ -1,0 +1,32 @@
+{% extends 'home/base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+        <div class="col-md-10 col-xs-10 col-sm-10">
+            <h3 class="round3" style="text-align:center;">Bem vindo ao exemplo de Crud App - Agenda</h3>
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-xs-10 col-sm-10"></div>
+        <div class="col-md-2 col-xs-1 col-sm-1">
+            <br />
+            <a href="{% url 'index' %}" >
+                <button type="button" class="btn btn-primary  mb-2">
+                    <span class="glyphicon glyphicon-user"></span>
+					Ver Contatos
+                </button>
+            </a>
+            <hr>
+            <a href="{% url 'create' %}">
+                <button type="button" class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus"></span>
+					Novo Contato
+                </button>
+            </a>
+        </div>
+    </div>
+    <br />
+</div>
+{% endblock %}

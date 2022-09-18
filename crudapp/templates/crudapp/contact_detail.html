@@ -1,0 +1,32 @@
+{% extends 'crudapp/base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+        <div class="col-md-10 col-xs-10 col-sm-10 ">
+            <br />
+            <h3 style="text-align:center;">
+                <font color="black">Visualizar Contato</font>
+            </h3>
+           
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+        <div class="col-md-10 col-xs-10 col-sm-10">
+			<p><strong>Nome:</strong> {{ contact.firstName }}</p> <!-- author detail link not yet defined -->
+			<p><strong>Sobrenome:</strong> {{ contact.lastName }}</p> <!-- author detail link not yet defined -->
+			<p><strong>Email:</strong> {{ contact.email }}</p>
+			<p><strong>Telefone:</strong> {{ contact.phone }}</p>
+			<p><strong>Endereco:</strong> {{ contact.address }}</p>
+			<p><strong>Descrição:</strong> {{ contact.description}}</p>
+		  
+            <br>
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}
